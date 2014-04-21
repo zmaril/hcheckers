@@ -34,7 +34,6 @@ problemFor conds partition =  --There may be a more efficent way to do this
 problemsFor g@Gr{k=ki, n=ni} = 
       map (problemFor $ partitionsFor g) $  P._partitions $ ki*(ni-ki)
 
-
 pad xs m el = xs ++ replicate (m - length xs) el
 
 mark  = char '#'
